@@ -105,17 +105,6 @@ The pipeline was evaluated on **50 HER2-SISH image regions**:
 
 ---
 
-## **Project Structure**
-
-```
-├── Nuclei Segmentation_Cellpose HITL.ipynb
-├── Signal Quantification Pipeline.ipynb
-├── images/
-├── README.md
-```
-
----
-
 ## **Environment**
 
 This project was developed using **Kaggle Notebooks**.
