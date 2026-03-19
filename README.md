@@ -59,9 +59,7 @@ A multi-stage image processing pipeline was developed to detect and quantify **H
 
 ## **HER2 Amplification Classification**
 
-```md
 ![HER2 Quantification Pipeline](images/quantification_flowchart.png)
-```
 
 ---
 
@@ -82,9 +80,7 @@ The pipeline was evaluated on **50 HER2-SISH image regions**:
 * Robust performance across varying staining conditions
 * Effective handling of clustered and sparse signals
 
-```md
 ![Confusion Matrix](images/confusion_matrix.png)
-```
 
 ---
 
@@ -92,15 +88,11 @@ The pipeline was evaluated on **50 HER2-SISH image regions**:
 
 ### Non-Amplified Example
 
-```md
 ![Non-Amplified Result](images/non_amplified.png)
-```
 
 ### Amplified Example
 
-```md
 ![Amplified Result](images/amplified.png)
-```
 
 ---
 
