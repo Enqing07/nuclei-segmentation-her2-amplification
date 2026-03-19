@@ -63,8 +63,9 @@ A multi-stage image processing pipeline was developed to detect and quantify **H
 
 ## **HER2 Amplification Classification**
 
-* HER2/CEN17 ratio ≥ 2.0 → **Amplified**
-* HER2/CEN17 ratio < 2.0 → **Non-Amplified**
+```md
+![HER2 Quantification Pipeline](images/quantification_flowchart.png)
+```
 
 ---
 
