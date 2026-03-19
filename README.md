@@ -98,7 +98,7 @@ The pipeline was evaluated on **50 HER2-SISH image regions**:
 
 ## **Dataset**
 
-* Source: Clinical dataset (UMMC collaboration)
+* Source: Private Clinical dataset (UMMC collaboration)
 * Total: 232 Regions of Interest (ROIs)
 * Evaluation: 50 ROIs (balanced amplified & non-amplified)
 * No ground truth segmentation masks provided
