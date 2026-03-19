@@ -16,9 +16,7 @@ The pipeline consists of three main stages:
 2. **Nuclei Segmentation**
 3. **Signal Quantification**
 
-```md
 ![Proposed Framework](images/framework.png)
-```
 
 ---
 
@@ -34,9 +32,7 @@ The pipeline consists of three main stages:
 * Adapted to domain-specific HER2-SISH images
 * Handles challenging cases such as overlapping and low-contrast nuclei
 
-```md
 ![Segmentation Results](images/segmentation.png)
-```
 
 ---
 
