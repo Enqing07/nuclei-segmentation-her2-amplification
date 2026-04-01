@@ -12,7 +12,7 @@ def load_models():
 
     custom_model = models.CellposeModel(gpu=False)
     # Save only the weights
-    torch.save(custom_model.net.state_dict(), "cellpose_HITL")
+    torch.save(custom_model.net.state_dict(), "model/cellpose_HITL")
 
     cyto3_model = models.Cellpose(
         gpu=False,
