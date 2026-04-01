@@ -5,15 +5,15 @@ import torch
 
 # Load BOTH models
 def load_models():
-    # custom_model = models.CellposeModel(
-    #     gpu=False,
-    #     pretrained_model="model/cellpose_HITL"
-    # )
+    custom_model = models.CellposeModel(
+        gpu=False,
+        pretrained_model="model/cellpose_HITL.pt"
+    )
 
-    custom_model = models.CellposeModel(gpu=False)
-    weights_path = "model/cellpose_HITL_weights.pt"
-    state_dict = torch.load(weights_path, map_location="cpu")
-    custom_model.net.load_state_dict(state_dict)
+    # custom_model = models.CellposeModel(gpu=False)
+    # weights_path = "model/cellpose_HITL_weights.pt"
+    # state_dict = torch.load(weights_path, map_location="cpu")
+    # custom_model.net.load_state_dict(state_dict)
 
 
     cyto3_model = models.Cellpose(
