@@ -31,7 +31,7 @@ The pipeline consists of three main stages:
 - **Signal Quantification**
 
 <p align="center">
-  <img src="images/framework.png" alt="Proposed Framework" width="700"/>
+  <img src="images/framework.png" alt="Proposed Framework" width="600"/>
 </p>
 
 ### *1. Nuclei Segmentation*
@@ -88,7 +88,7 @@ The pipeline was evaluated on **50 HER2-SISH image regions**:
 * Effective handling of clustered and sparse signals
 
 <p align="center">
-  <img src="images/confusion_matrix.png" alt="Confusion Matrix" width="400"/>
+  <img src="images/confusion_matrix.png" alt="Confusion Matrix" width="300"/>
 </p>
 
 
