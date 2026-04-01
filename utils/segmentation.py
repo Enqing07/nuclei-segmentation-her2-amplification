@@ -1,16 +1,6 @@
 import numpy as np
 import cv2
-
 import torch
-
-# _original_load = torch.load
-
-# def patched_load(*args, **kwargs):
-#     kwargs["weights_only"] = False
-#     return _original_load(*args, **kwargs)
-
-# torch.load = patched_load
-
 from cellpose import models
 
 
