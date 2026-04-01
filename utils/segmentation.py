@@ -4,10 +4,15 @@ from cellpose import models
 
 # Load BOTH models
 def load_models():
-    custom_model = models.CellposeModel(
-        gpu=False,
-        pretrained_model="model/cellpose_HITL.pt"
-    )
+    # custom_model = models.CellposeModel(
+    #     gpu=False,
+    #     pretrained_model="model/cellpose_HITL.pt"
+    # )
+    custom_model = models.CellposeModel(gpu=False)
+
+    # Load the saved weights
+    weights_path = "model/cellpose_HITL_weights.pt"
+    custom_model.net.load_state_dict(torch.load(weights_path, map_location="cpu"))
 
     cyto3_model = models.Cellpose(
         gpu=False,
