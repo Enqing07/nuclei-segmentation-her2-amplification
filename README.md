@@ -8,6 +8,22 @@ Manual analysis of pathology slides is time-consuming and subjective. This proje
 
 ---
 
+## **Dataset**
+
+* Source: Private clinical dataset (University Malaya Medical Centre, UMMC collaboration)
+* Total: 232 Regions of Interest (ROIs)
+* Evaluation sets: **50** selected ROIs (25 amplified, 25 non-amplified)
+* **No ground truth** segmentation masks provided
+
+---
+
+## Interactive Web App ##
+The repository includes an interactive **Streamlit** application that allows users to **upload** pathology images, **switch** between segmentation models or comparison mode, and **visualize** segmentation results together with HER2/CEN17 ratio **analysis**.
+
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://nuclei-segmentation-her2-amplification.streamlit.app/)
+
+---
+
 ## **Proposed Framework**
 
 The pipeline consists of three main stages:
@@ -79,15 +95,6 @@ The pipeline was evaluated on **50 HER2-SISH image regions**:
 * Effective handling of clustered and sparse signals
 
 ![Confusion Matrix](images/confusion_matrix.png)
-
----
-
-## **Dataset**
-
-* Source: Private clinical dataset (UMMC collaboration)
-* Total: 232 Regions of Interest (ROIs)
-* Evaluation: 50 ROIs (balanced amplified & non-amplified)
-* No ground truth segmentation masks provided
 
 ---
 
