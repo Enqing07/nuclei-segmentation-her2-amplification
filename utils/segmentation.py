@@ -11,7 +11,7 @@ def load_models():
     # )
 
     
-    custom_model = torch.load("model/cellpose_HITL.pt", weights_only=False)
+    custom_model = torch.load("model/cellpose_HITL", weights_only=False)
 
 
     cyto3_model = models.Cellpose(
