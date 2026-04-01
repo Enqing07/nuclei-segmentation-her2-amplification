@@ -32,8 +32,6 @@ The pipeline consists of three main stages:
 * Adapted to domain-specific HER2-SISH images
 * Handles challenging cases such as overlapping and low-contrast nuclei
 
-![Segmentation Results](images/segmentation.png)
-
 ---
 
 ## **2. Signal Quantification**
@@ -81,18 +79,6 @@ The pipeline was evaluated on **50 HER2-SISH image regions**:
 * Effective handling of clustered and sparse signals
 
 ![Confusion Matrix](images/confusion_matrix.png)
-
----
-
-## **Qualitative Results**
-
-### Non-Amplified Example
-
-![Non-Amplified Result](images/non_amplified.png)
-
-### Amplified Example
-
-![Amplified Result](images/amplified.png)
 
 ---
 
