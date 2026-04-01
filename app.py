@@ -89,7 +89,10 @@ with st.sidebar:
 
 # Load models
 @st.cache_resource
-models_dict = load_models()
+def get_models():
+    return load_models()
+
+models_dict = get_models()
 channels = [[0, 3]]
 
 # Upload
