@@ -31,7 +31,7 @@ The pipeline consists of three main stages:
 - **Signal Quantification**
 
 <p align="center">
-  <img src="images/framework.png" alt="Proposed Framework" width="600"/>
+  <img src="images/framework.png" alt="Proposed Framework" width="700"/>
 </p>
 
 ### *1. Nuclei Segmentation*
