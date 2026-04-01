@@ -3,13 +3,13 @@ import cv2
 
 import torch
 
-_original_load = torch.load
+# _original_load = torch.load
 
-def patched_load(*args, **kwargs):
-    kwargs["weights_only"] = False
-    return _original_load(*args, **kwargs)
+# def patched_load(*args, **kwargs):
+#     kwargs["weights_only"] = False
+#     return _original_load(*args, **kwargs)
 
-torch.load = patched_load
+# torch.load = patched_load
 
 from cellpose import models
 
@@ -18,7 +18,7 @@ from cellpose import models
 def load_models():
     custom_model = models.CellposeModel(
         gpu=False,
-        pretrained_model="model/cellpose_HITL"
+        pretrained_model="model/cellpose_HITL.pt"
     )
 
     cyto3_model = models.Cellpose(
