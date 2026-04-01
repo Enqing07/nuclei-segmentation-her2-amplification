@@ -26,9 +26,9 @@ The repository includes an interactive **Streamlit** application that allows use
 
 The pipeline consists of three main stages:
 
-- **Data Collection**
-- **Nuclei Segmentation**
-- **Signal Quantification**
+- Data Collection
+- Nuclei Segmentation
+- Signal Quantification
 
 <p align="center">
   <img src="images/framework.png" alt="Proposed Framework" width="700"/>
@@ -36,9 +36,9 @@ The pipeline consists of three main stages:
 
 ### *1. Nuclei Segmentation*
 
-* **Model**: Cellpose ("cyto3") pretrained model
-* **Approach**: Human-in-the-Loop (HITL) fine-tuning using Cellpose GUI
-* **Goal**: Accurately segment nuclei without requiring large annotated datasets
+* Model: Cellpose ("cyto3") pretrained model
+* Approach: Human-in-the-Loop (HITL) fine-tuning using Cellpose GUI
+* Goal: Accurately segment nuclei without requiring large annotated datasets
 
 #### Key Highlights:
 
@@ -53,14 +53,10 @@ A multi-stage image processing pipeline was developed to detect and quantify **H
 
 #### Pipeline Components:
 
-* **Color Deconvolution**
-  * Separates HER2 (black) and CEN17 (pink) signals
-* **Signal Detection**
-  * Thresholding, color filtering, and morphological processing
-* **Cluster Handling**
-  * Estimates signal counts in dense regions
-* **Nuclei-Constrained Quantification**
-  * Computes HER2/CEN17 ratio within segmented nuclei
+* **Color Deconvolution**: Separates HER2 (black) and CEN17 (pink) signals
+* **Signal Detection**: Thresholding, color filtering, and morphological processing
+* **Cluster Handling**: Estimates signal counts in dense regions
+* **Nuclei-Constrained Quantification**: Computes HER2/CEN17 ratio within segmented nuclei
 
 
 
