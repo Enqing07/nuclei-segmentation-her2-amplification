@@ -3,17 +3,15 @@ import cv2
 import torch
 from cellpose import models
 
-use_gpu = torch.cuda.is_available()
-
 # Load BOTH models
 def load_models():
     custom_model = models.CellposeModel(
-        gpu=use_gpu,
+        gpu=False,
         pretrained_model="model/cellpose_HITL.pt"
     )
 
     cyto3_model = models.Cellpose(
-        gpu=use_gpu,
+        gpu=False,
         model_type='cyto3'
     )
 
