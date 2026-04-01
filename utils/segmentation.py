@@ -6,7 +6,7 @@ from cellpose import models
 def load_models():
     custom_model = models.CellposeModel(
         gpu=False,
-        pretrained_model="model/cellpose_HITL"
+        pretrained_model="model/cellpose_HITL.pt"
     )
 
     cyto3_model = models.Cellpose(
