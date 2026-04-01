@@ -10,10 +10,11 @@ def load_models():
     #     pretrained_model="model/cellpose_HITL"
     # )
 
-    custom_model = models.CellposeModel(gpu=False)
-    
-    state_dict = torch.load("model/cellpose_HITL", map_location="cpu")
-    custom_model.net.load_state_dict(state_dict)
+    custom_model = torch.load(
+        "model/cellpose_HITL",
+        map_location="cpu",
+        weights_only=False
+    )
 
 
     cyto3_model = models.Cellpose(
