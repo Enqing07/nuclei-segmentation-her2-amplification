@@ -10,12 +10,9 @@ def load_models():
     #     pretrained_model="model/cellpose_HITL.pt"
     # )
 
-    # Step 1: Create the Cellpose model architecture
     custom_model = models.CellposeModel(gpu=False)
     
-    # Step 2: Load the weights
-    weights_path = "model/cellpose_HITL.pt"  # your current OrderedDict file
-    state_dict = torch.load(weights_path, map_location="cpu")
+    state_dict = torch.load("model/cellpose_HITL.pt", map_location="cpu")
     custom_model.net.load_state_dict(state_dict)
 
 
