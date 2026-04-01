@@ -13,7 +13,7 @@ def load_models():
     custom_model = models.CellposeModel(
         gpu=False,
     )
-    weights_path = "model/cellpose_HITL_weights.pt"
+    weights_path = "model/cellpose_HITL.pt"
     state_dict = torch.load(weights_path, map_location="cpu")
     custom_model.net.load_state_dict(state_dict)
 
