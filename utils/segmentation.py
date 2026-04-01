@@ -7,7 +7,7 @@ import torch
 def load_models():
     # custom_model = models.CellposeModel(
     #     gpu=False,
-    #     pretrained_model="model/cellpose_HITL.pt"
+    #     pretrained_model="model/cellpose_HITL"
     # )
     custom_model = models.CellposeModel(gpu=False)
 
