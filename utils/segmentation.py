@@ -1,6 +1,7 @@
 import numpy as np
 import cv2
 from cellpose import models
+import torch
 
 # Load BOTH models
 def load_models():
