@@ -27,14 +27,14 @@ The repository includes an interactive **Streamlit** application that allows use
 The pipeline consists of three main stages:
 
 - **Data Collection**
--  **Nuclei Segmentation**
--   **Signal Quantification**
+- **Nuclei Segmentation**
+- **Signal Quantification**
 
 <p align="center">
   <img src="images/framework.png" alt="Proposed Framework" width="700"/>
 </p>
 
-### **1. Nuclei Segmentation**
+### *1. Nuclei Segmentation*
 
 * **Model**: Cellpose ("cyto3") pretrained model
 * **Approach**: Human-in-the-Loop (HITL) fine-tuning using Cellpose GUI
@@ -47,7 +47,7 @@ The pipeline consists of three main stages:
 * Handles challenging cases such as overlapping and low-contrast nuclei
 
 
-### **2. Signal Quantification**
+### *2. Signal Quantification*
 
 A multi-stage image processing pipeline was developed to detect and quantify **HER2** and **CEN17** signals.
 
