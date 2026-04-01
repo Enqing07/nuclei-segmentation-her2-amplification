@@ -6,7 +6,6 @@ This project presents an automated pipeline for **HER2 gene amplification analys
 
 Manual analysis of pathology slides is time-consuming and subjective. This project aims to provide a **reliable and scalable computational approach** for identifying HER2 amplification status.
 
----
 
 ## **Dataset**
 
@@ -15,7 +14,6 @@ Manual analysis of pathology slides is time-consuming and subjective. This proje
 * Evaluation sets: **50** selected ROIs (25 amplified, 25 non-amplified)
 * **No ground truth** segmentation masks provided
 
----
 
 ## Interactive Web App ##
 The repository includes an interactive **Streamlit** application that allows users to **upload** pathology images, **switch** between segmentation models or comparison mode, and **visualize** segmentation results together with HER2/CEN17 ratio **analysis**.
@@ -32,9 +30,9 @@ The pipeline consists of three main stages:
 2. **Nuclei Segmentation**
 3. **Signal Quantification**
 
-![Proposed Framework](images/framework.png)
-
----
+<p align="center">
+  <img src="images/framework.png" alt="Proposed Framework" width="700"/>
+</p>
 
 ## **1. Nuclei Segmentation**
 
@@ -48,7 +46,6 @@ The pipeline consists of three main stages:
 * Adapted to domain-specific HER2-SISH images
 * Handles challenging cases such as overlapping and low-contrast nuclei
 
----
 
 ## **2. Signal Quantification**
 
@@ -69,13 +66,13 @@ A multi-stage image processing pipeline was developed to detect and quantify **H
 
   * Computes HER2/CEN17 ratio within segmented nuclei
 
----
+
 
 ## **HER2 Amplification Classification**
 
 - HER2/CEN17 ratio ≥ 2.0: **Amplified**
 - HER2/CEN17 ratio < 2.0: **Non-Amplified**
----
+
 
 ## **Results**
 
@@ -88,33 +85,30 @@ The pipeline was evaluated on **50 HER2-SISH image regions**:
 | Recall    | 80.00% |
 | F1 Score  | 86.96% |
 
-### Key Observations:
+## **Key Observations:**
 
 * Strong agreement with expert annotations
 * Robust performance across varying staining conditions
 * Effective handling of clustered and sparse signals
 
-![Confusion Matrix](images/confusion_matrix.png)
+<p align="center">
+  <img src="images/confusion_matrix.png" alt="Confusion Matrix" width="400"/>
+</p>
 
----
 
-## **Environment**
 
-This project was developed using **Kaggle Notebooks**.
-Paths such as `/kaggle/input/...` are used for dataset access.
+## **Installation and Requirements**
 
----
-
-## **Limitations**
-
-* No ground truth segmentation masks for quantitative evaluation
-* Rule-based signal detection may be sensitive to staining variation
-* Performance may vary on unseen datasets
-
----
-
-## **Future Work**
-
-* Develop supervised learning-based signal detection
-* Improve generalization across different staining conditions
-* Expand dataset with annotated ground truth
+1. In your terminal, clone the repository:
+```bash
+https://github.com/Enqing07/nuclei-segmentation-her2-amplification.git
+cd nuclei-segmentation-her2-amplification
+```
+2. Install dependencies:
+```bash
+pip install -r requirements.txt
+```
+3. Run the app:
+```bash
+streamlit run app.py
+```
