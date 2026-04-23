@@ -1,6 +1,6 @@
-# **HER2-SISH Nuclei Segmentation and Signal Quantification Pipeline**
+# HER2-SISH Nuclei Segmentation and Signal Quantification Pipeline 🔬
 
-## **Overview**
+## Overview
 
 This project presents an automated pipeline for **HER2 gene amplification analysis** in HER2-SISH histopathology images. The framework integrates **deep learning-based nuclei segmentation** with a **custom signal quantification pipeline** to assist in breast cancer diagnosis.
 
@@ -13,7 +13,7 @@ The repository includes an interactive **Streamlit** application that allows use
 
 ---
 
-## **Dataset**
+## Dataset
 
 * Source: Private clinical dataset (University Malaya Medical Centre, UMMC collaboration)
 * Total: 232 Regions of Interest (ROIs)
@@ -67,7 +67,7 @@ A multi-stage image processing pipeline was developed to detect and quantify **H
 - HER2/CEN17 ratio < 2.0: **Non-Amplified**
 
 
-## **Results**
+## Results
 
 The pipeline was evaluated on **50 HER2-SISH image regions**:
 
@@ -78,7 +78,7 @@ The pipeline was evaluated on **50 HER2-SISH image regions**:
 | Recall    | 80.00% |
 | F1 Score  | 86.96% |
 
-## **Key Observations:**
+## Key Observations
 
 * Strong agreement with expert annotations
 * Robust performance across varying staining conditions
@@ -90,7 +90,7 @@ The pipeline was evaluated on **50 HER2-SISH image regions**:
 
 
 
-## **Installation and Requirements**
+## Installation and Requirements
 
 1. In your terminal, clone the repository:
 ```bash
