@@ -9,7 +9,11 @@ Manual analysis of pathology slides is time-consuming and subjective. This proje
 ## Interactive Web App ##
 The repository includes an interactive **Streamlit** application that allows users to **upload** pathology images, **switch** between segmentation models or comparison mode, and **visualize** segmentation results together with HER2/CEN17 ratio **analysis**.
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://nuclei-segmentation-her2-amplification.streamlit.app/)
+<p align="center">
+  <a href="https://nuclei-segmentation-her2-amplification.streamlit.app/">
+    <img src="https://static.streamlit.io/badges/streamlit_badge_black_white.svg" alt="Streamlit App">
+  </a>
+</p>
 
 ---
 
