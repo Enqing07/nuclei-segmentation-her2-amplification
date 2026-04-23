@@ -6,6 +6,12 @@ This project presents an automated pipeline for **HER2 gene amplification analys
 
 Manual analysis of pathology slides is time-consuming and subjective. This project aims to provide a **reliable and scalable computational approach** for identifying HER2 amplification status.
 
+## Interactive Web App ##
+The repository includes an interactive **Streamlit** application that allows users to **upload** pathology images, **switch** between segmentation models or comparison mode, and **visualize** segmentation results together with HER2/CEN17 ratio **analysis**.
+
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://nuclei-segmentation-her2-amplification.streamlit.app/)
+
+---
 
 ## **Dataset**
 
@@ -14,11 +20,6 @@ Manual analysis of pathology slides is time-consuming and subjective. This proje
 * Evaluation sets: **50** selected ROIs (25 amplified, 25 non-amplified)
 * **No ground truth** segmentation masks provided
 
-
-## Interactive Web App ##
-The repository includes an interactive **Streamlit** application that allows users to **upload** pathology images, **switch** between segmentation models or comparison mode, and **visualize** segmentation results together with HER2/CEN17 ratio **analysis**.
-
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://nuclei-segmentation-her2-amplification.streamlit.app/)
 
 ---
 
